@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citi.com</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .top-nav {
+            color: gray;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        li {
+            margin: 0 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .bottom-nav {
+            color: #04208f;
+            padding: 20px;
+            text-align: center;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+            position: relative;
+            z-index: 2;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logos {
+            display: flex;
+            align-items: center;
+        }
+
+        .button {
+            background-color: #056dae;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+        }
+
+        .col {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .bg {
+            background-color: #c5e4f3;
+        }
+
+        .bg-2 {
+            background-color: #333;
+        }
+
+        .bg-light {
+            background-color: rgb(244, 244, 244);
+            color: #333;
+        }
+
+        .bg-light-2 {
+            background-color: #f0f5f7;
+        }
+
+        .login-container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+
+        .login-form {
+            padding: 20px;
+
+        }
+
+        .auth-input,
+        .auth-label {
+            display: block;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .w-100 {
+            width: 100%;
+        }
+
+        .form-check {
+            padding: 10px 0;
+        }
+
+        .justify-content-between {
+            justify-content: space-between;
+        }
+
+        .small-fs {
+            font-size: 12px;
+        }
+
+        .passwordless {
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            font-size: 13px;
+            word-spacing: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="top-nav bg-light-2">
+            <div class="logos">
+                <a href="">
+                    <img src="citi.svg" alt="Citi Logo" class="logo">
+                </a>
+                <img src="fdic.svg" alt="FDIC Logo" class="logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="">ATM / BRANCH</a>
+                </li>
+                <li>
+                    <a href="">ESPANOL</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="bottom-nav">
+            <ul>
+                <li>
+                    <a href="">Credit Cards</a>
+                </li>
+                <li>
+                    <a href="">Banking</a>
+                </li>
+                <li>
+                    <a href="">Lending</a>
+                </li>
+                <li>
+                    <a href="">Investing</a>
+                </li>
+                <li>
+                    <a href="">Wealth Management</a>
+                </li>
+                <li>
+                    <a href="">Open an Account</a>
+                </li>
+            </ul>
+            <button class="button"> How can we help? </button>
+        </nav>
+    </header>
+
+
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>CITI® CHECKING ACCOUNTS</p>
+                    <h1 class="">Open. Deposit. Earn $325.</h1>
+                    <p class="">Earn a bonus when you open an eligible checking account with Enhanced Direct Deposits &
+                        required activities.</p>
+                    <span><a href="#" class="button">Learn More</a></span>
+                </div>
+
+                <div class="login-container">
+                    <form class="login-form">
+                        <div class="form-row">
+                            <div>
+                                <label for="loginEmail" class="auth-label">User ID</label>
+                                <input type="username" class="auth-input" placeholder="User ID" id="login">
+                            </div>
+                            <div>
+                                <label for="loginPassword" class="auth-label">Password</label>
+                                <input type="password" class="auth-input" placeholder="Password" id="loginPassword">
+                            </div>
+                        </div>
+                        <div class="form-check small-fs">
+                            <input class="form-check-input" type="checkbox" value="" id="" />
+                            <label class="" for=""> Remember User ID </label>
+                        </div>
+                        <button class="button w-100">Sign on</button>
+                        <div class="row justify-content-between small-fs">
+                            <div class="row">
+                                <a href="" class="hover">Register</a>
+                                <p>/</p>
+                                <a href="" class="hover">Activate</a>
+                            </div>
+                            <p class="">Forgot
+                                <a href="#">User ID</a>
+                                or
+                                <a href="#">Password</a>
+                            </p>
+                        </div>
+                    </form>
+                    <div class="bg-light-2 passwordless">
+                        <a href="#"> Passwordless Sign On</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <section class="section-1" class="section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="" alt="Family" class="w-100">
+                </div>
+                <div class="col">
+                    <h1>Simplified Banking</h1>
+                    <p>Citi mobile banking allows you to manage your money and pay friends — all while on-the-go. Member
+                        FDIC.</p>
+                    <span><a href="#" class="button">Learn More</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg section-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Get the most out of your Citi® credit card</h1>
+                    <p>Explore the benefits, rewards, and offers that come with your Citi credit card. From help
+                        managing
+                        your credit to getting the most out of your card, we’re here to help.</p>
+                    <span><a href="#" class="button">Learn More</a></span>
+                </div>
+                <div class="col">
+                    <img src="" alt="Credit Card" class="w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-3 bg-light-2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="" alt="Mobile App" class="w-100">
+                </div>
+                <div class="col">
+                    <h1>Banking at your fingertips</h1>
+                    <p>With Citi’s Mobile App, you’re in control of your finances even on the go. Our mobile banking
+                        experience has been designed with you in mind.</p>
+                    <span><a href="#" class="button">Explore Now</a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-2">
+        <div class="container">
+            <footer>
+                Citi
+                Privacy
+                Accessibility
+                Careers
+                Privacy
+                Rewards
+                Benefits
+                Offers
+                Contact
+            </footer>
+        </div>
+    </section>
+
+</body>
+
+</html>
